@@ -94,6 +94,7 @@
     "lost": "8.3.1",
     "minimatch": "3.0.4",
     "moment": "^2.24.0",
+    "nanoid": "2.0.3",
     "next": "workspace:packages/next",
     "node-fetch": "2.6.1",
     "node-notifier": "5.4.0",

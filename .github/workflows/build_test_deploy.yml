@@ -68,7 +68,7 @@ jobs:
       # TODO: remove after we fix watchpack watching too much
       - run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
-      - run: node run-tests.js --timings -g ${{ matrix.group }}/6 -c 3
+      - run: yarn node run-tests.js --timings -g ${{ matrix.group }}/6 -c 3
 
   testYarnPnP:
     runs-on: ubuntu-latest
@@ -77,7 +77,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: yarn install --frozen-lockfile --check-files
+      - run: yarn install --immutable
 
       - run: |
           mkdir -p ./e2e-tests/next-pnp
@@ -110,10 +110,10 @@ jobs:
       - run: cat package.json | jq '.resolutions.webpack = "^5.0.0-beta.30"' > package.json.tmp && mv package.json.tmp package.json
       - run: cat package.json | jq '.resolutions.react = "^17.0.0-rc.1"' > package.json.tmp && mv package.json.tmp package.json
       - run: cat package.json | jq '.resolutions."react-dom" = "^17.0.0-rc.1"' > package.json.tmp && mv package.json.tmp package.json
-      - run: yarn install --check-files
-      - run: node run-tests.js test/integration/production/test/index.test.js
-      - run: node run-tests.js test/integration/basic/test/index.test.js
-      - run: node run-tests.js test/acceptance/*
+      - run: yarn install
+      - run: yarn node run-tests.js test/integration/production/test/index.test.js
+      - run: yarn node run-tests.js test/integration/basic/test/index.test.js
+      - run: yarn node run-tests.js test/acceptance/*
 
   testFirefox:
     name: Test Firefox (production)
@@ -129,7 +129,7 @@ jobs:
         with:
           path: ./*
           key: ${{ github.sha }}
-      - run: node run-tests.js test/integration/production/test/index.test.js
+      - run: yarn node run-tests.js test/integration/production/test/index.test.js
 
   testSafari:
     name: Test Safari (production)
@@ -148,7 +148,7 @@ jobs:
         with:
           path: ./*
           key: ${{ github.sha }}
-      - run: '[[ -z "$BROWSERSTACK_ACCESS_KEY" ]] && echo "Skipping for PR" || node run-tests.js test/integration/production/test/index.test.js'
+      - run: '[[ -z "$BROWSERSTACK_ACCESS_KEY" ]] && echo "Skipping for PR" || yarn node run-tests.js test/integration/production/test/index.test.js'
 
   testSafariOld:
     name: Test Safari 10.1 (nav)
@@ -168,7 +168,7 @@ jobs:
         with:
           path: ./*
           key: ${{ github.sha }}
-      - run: '[[ -z "$BROWSERSTACK_ACCESS_KEY" ]] && echo "Skipping for PR" || node run-tests.js test/integration/production-nav/test/index.test.js'
+      - run: '[[ -z "$BROWSERSTACK_ACCESS_KEY" ]] && echo "Skipping for PR" || yarn node run-tests.js test/integration/production-nav/test/index.test.js'
 
   publishRelease:
     name: Potentially publish release

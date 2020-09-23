@@ -8,8 +8,6 @@ import { Options as ChromeOptions } from 'selenium-webdriver/chrome'
 import { Options as SafariOptions } from 'selenium-webdriver/safari'
 import { Options as FireFoxOptions } from 'selenium-webdriver/firefox'
 
-chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build());
-
 const {
   BROWSER_NAME: browserName = 'chrome',
   BROWSERSTACK,
