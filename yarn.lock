@@ -3842,6 +3842,7 @@ __metadata:
     source-map: 0.8.0-beta.0
     stacktrace-parser: 0.1.10
     strip-ansi: 6.0.0
+    typescript: 3.9.2
   peerDependencies:
     react: ^16.9.0
     react-dom: ^16.9.0
