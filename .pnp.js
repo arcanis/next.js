@@ -107,6 +107,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-react", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:7.10.4"],
             ["@fullhuman/postcss-purgecss", "npm:1.3.0"],
             ["@mdx-js/loader", "npm:0.18.0"],
+            ["@next/eslint-plugin-next", "workspace:packages/eslint-plugin-next"],
             ["@types/cheerio", "npm:0.22.16"],
             ["@types/fs-extra", "npm:8.1.0"],
             ["@types/http-proxy", "npm:1.17.3"],
@@ -177,6 +178,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pretty-ms", "npm:7.0.0"],
             ["react", "npm:16.12.0"],
             ["react-dom", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:16.12.0"],
+            ["react-is", "npm:16.13.1"],
             ["react-ssr-prepass", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:1.0.8"],
             ["release", "npm:6.3.0"],
             ["request-promise-core", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:1.1.2"],
@@ -9064,13 +9066,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-styled-components", "virtual:a5733222af87d0f6eaf7b135b6b8af44a3b57a15870239527363c90e7e5419f27f8c550b8c2327ff9af6f98dde506c3d20c2b75c695a3213a9d916fee9ace3af#npm:1.10.7"],
             ["@babel/helper-annotate-as-pure", "npm:7.8.3"],
             ["@babel/helper-module-imports", "npm:7.7.4"],
+            ["@types/react-is", null],
             ["@types/styled-components", null],
             ["babel-plugin-syntax-jsx", "npm:6.18.0"],
             ["lodash", "npm:4.17.15"],
+            ["react-is", "npm:16.13.1"],
             ["styled-components", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:5.1.0"]
           ],
           "packagePeers": [
+            "@types/react-is",
             "@types/styled-components",
+            "react-is",
             "styled-components"
           ],
           "linkType": "HARD",
@@ -20756,6 +20762,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-react", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:7.10.4"],
             ["@fullhuman/postcss-purgecss", "npm:1.3.0"],
             ["@mdx-js/loader", "npm:0.18.0"],
+            ["@next/eslint-plugin-next", "workspace:packages/eslint-plugin-next"],
             ["@types/cheerio", "npm:0.22.16"],
             ["@types/fs-extra", "npm:8.1.0"],
             ["@types/http-proxy", "npm:1.17.3"],
@@ -20826,6 +20833,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pretty-ms", "npm:7.0.0"],
             ["react", "npm:16.12.0"],
             ["react-dom", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:16.12.0"],
+            ["react-is", "npm:16.13.1"],
             ["react-ssr-prepass", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:1.0.8"],
             ["release", "npm:6.3.0"],
             ["request-promise-core", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:1.1.2"],
@@ -24804,7 +24812,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-is", null],
             ["object-is", "npm:1.0.2"],
             ["react", "npm:16.12.0"],
-            ["react-is", null]
+            ["react-is", "npm:16.13.1"]
           ],
           "packagePeers": [
             "@types/react-is",
@@ -27689,7 +27697,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hoist-non-react-statics", "npm:3.3.2"],
             ["react", "npm:16.12.0"],
             ["react-dom", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:16.12.0"],
-            ["react-is", null],
+            ["react-is", "npm:16.13.1"],
             ["shallowequal", "npm:1.1.0"],
             ["supports-color", "npm:5.5.0"]
           ],

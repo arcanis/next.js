@@ -129,7 +129,7 @@ export function runNextCommand(argv, options = {}) {
         !options.ignoreFail &&
         code !== 0
       ) {
-        return reject(new Error(`command failed with code ${code}:\n\nStdout:\n${stdout}\nStderr:\n${stderr}`))
+        return reject(new Error(`command failed with code ${code}:\n\nStdout:\n${stdoutOutput}\nStderr:\n${stderrOutput}`))
       }
 
       resolve({
