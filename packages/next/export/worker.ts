@@ -216,7 +216,7 @@ export default async function exportPage({
         }
 
         renderMethod = (mod as ComponentModule).renderReqToHTML
-        const result = await renderMethod(
+        const result: any = await renderMethod(
           req,
           res,
           'export',

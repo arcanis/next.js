@@ -14,9 +14,7 @@
   },
   "author": "Next.js Team <support@vercel.com>",
   "license": "MIT",
-  "bin": {
-    "create-next-app": "./dist/index.js"
-  },
+  "bin": "./dist/index.js",
   "files": [
     "dist"
   ],
@@ -28,6 +26,7 @@
   },
   "devDependencies": {
     "@types/async-retry": "1.4.2",
+    "@types/cross-spawn": "6.0.0",
     "@types/node": "^12.6.8",
     "@types/prompts": "2.0.1",
     "@types/rimraf": "3.0.0",
@@ -43,7 +42,7 @@
     "prompts": "2.1.0",
     "rimraf": "3.0.0",
     "tar": "4.4.10",
-    "typescript": "3.8.3",
+    "typescript": "3.9.2",
     "update-check": "1.5.4",
     "validate-npm-package-name": "3.0.0"
   },

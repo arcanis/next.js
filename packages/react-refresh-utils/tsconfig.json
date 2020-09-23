@@ -4,7 +4,7 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "target": "es2015",
-    "lib": ["dom"],
+    "lib": ["es2015", "dom"],
     "downlevelIteration": true,
     "preserveWatchOutput": true
   },

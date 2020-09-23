@@ -27,6 +27,13 @@
     "stacktrace-parser": "0.1.10",
     "strip-ansi": "6.0.0"
   },
+  "devDependencies": {
+    "@types/babel__code-frame": "7.0.1",
+    "@types/node": "^12.6.8",
+    "@types/react": "16.9.17",
+    "@types/react-dom": "16.9.4",
+    "@types/webpack-sources": "0.1.5"
+  },
   "peerDependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

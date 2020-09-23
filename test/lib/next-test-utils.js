@@ -13,6 +13,8 @@ import path from 'path'
 import qs from 'querystring'
 import treeKill from 'tree-kill'
 
+const NEXT_DIR = path.resolve(__dirname, '../../packages/next')
+
 export const nextServer = server
 export const pkg = _pkg
 
@@ -86,7 +88,7 @@ export function findPort() {
 }
 
 export function runNextCommand(argv, options = {}) {
-  const nextDir = path.dirname(require.resolve('next/package'))
+  const nextDir = NEXT_DIR;
   const nextBin = path.join(nextDir, 'dist/bin/next')
   const cwd = options.cwd || nextDir
   // Let Next.js decide the environment
@@ -150,7 +152,8 @@ export function runNextCommand(argv, options = {}) {
 }
 
 export function runNextCommandDev(argv, stdOut, opts = {}) {
-  const cwd = path.dirname(require.resolve('next/package'))
+  const cwd = NEXT_DIR;
+
   const env = {
     ...process.env,
     NODE_ENV: undefined,
@@ -164,6 +167,7 @@ export function runNextCommandDev(argv, stdOut, opts = {}) {
       ['--no-deprecation', 'dist/bin/next', ...argv],
       { cwd, env }
     )
+
     let didResolve = false
 
     function handleStdout(data) {
