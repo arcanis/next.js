@@ -4,7 +4,7 @@
     "strict": true,
     "esModuleInterop": true,
     "target": "es3",
-    "lib": ["dom"],
+    "lib": ["es2015", "dom"],
     "downlevelIteration": true,
     "preserveWatchOutput": true,
     "outDir": "lib",
