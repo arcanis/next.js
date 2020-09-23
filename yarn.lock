@@ -3856,6 +3856,7 @@ __metadata:
   dependencies:
     "@types/webpack": ^4.41.22
     react-refresh: 0.8.3
+    typescript: 3.9.2
   peerDependencies:
     react-refresh: 0.8.3
     webpack: ^4 || ^5

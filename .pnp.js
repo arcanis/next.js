@@ -6170,6 +6170,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-refresh", null],
             ["@types/webpack", "npm:4.41.22"],
             ["react-refresh", "npm:0.8.3"],
+            ["typescript", "patch:typescript@npm%3A3.9.2#builtin<compat/typescript>::version=3.9.2&hash=5b02a2"],
             ["webpack", "virtual:b493f247bcf7ba6e741e5fd0c43a5190b556f63c408f696a1e49a1591a6af159cbf2c635107aebf32570fa7f23a572f5849d7f6f64aea6f4e207a04fe9dd33aa#npm:4.44.1"]
           ],
           "packagePeers": [
@@ -6184,7 +6185,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@next/react-refresh-utils", "workspace:packages/react-refresh-utils"],
             ["@types/webpack", "npm:4.41.22"],
-            ["react-refresh", "npm:0.8.3"]
+            ["react-refresh", "npm:0.8.3"],
+            ["typescript", "patch:typescript@npm%3A3.9.2#builtin<compat/typescript>::version=3.9.2&hash=5b02a2"]
           ],
           "linkType": "SOFT",
         }]
