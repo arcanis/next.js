@@ -113,18 +113,14 @@ export function runNextCommand(argv, options = {}) {
     }
 
     let stderrOutput = ''
-    if (options.stderr) {
-      instance.stderr.on('data', function (chunk) {
-        stderrOutput += chunk
-      })
-    }
+    instance.stderr.on('data', function (chunk) {
+      stderrOutput += chunk
+    })
 
     let stdoutOutput = ''
-    if (options.stdout) {
-      instance.stdout.on('data', function (chunk) {
-        stdoutOutput += chunk
-      })
-    }
+    instance.stdout.on('data', function (chunk) {
+      stdoutOutput += chunk
+    })
 
     instance.on('close', (code) => {
       if (
@@ -133,7 +129,7 @@ export function runNextCommand(argv, options = {}) {
         !options.ignoreFail &&
         code !== 0
       ) {
-        return reject(new Error(`command failed with code ${code}`))
+        return reject(new Error(`command failed with code ${code}:\n\nStdout:\n${stdout}\nStderr:\n${stderr}`))
       }
 
       resolve({
