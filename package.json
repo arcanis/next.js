@@ -94,6 +94,7 @@
     "jest-circus": "26.0.1",
     "jest-cli": "24.9.0",
     "jest-environment-node": "^26.3.0",
+    "jimp": "^0.16.1",
     "ky": "0.19.1",
     "ky-universal": "0.6.0",
     "lerna": "3.14.1",
