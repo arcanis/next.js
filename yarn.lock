@@ -9148,6 +9148,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css-loader@npm:3.2.0":
+  version: 3.2.0
+  resolution: "css-loader@npm:3.2.0"
+  dependencies:
+    camelcase: ^5.3.1
+    cssesc: ^3.0.0
+    icss-utils: ^4.1.1
+    loader-utils: ^1.2.3
+    normalize-path: ^3.0.0
+    postcss: ^7.0.17
+    postcss-modules-extract-imports: ^2.0.0
+    postcss-modules-local-by-default: ^3.0.2
+    postcss-modules-scope: ^2.1.0
+    postcss-modules-values: ^3.0.0
+    postcss-value-parser: ^4.0.0
+    schema-utils: ^2.0.0
+  peerDependencies:
+    webpack: ^4.0.0
+  checksum: 573b40f5bfdef22f2ce955d06dbb8a2640072bb482276b38b3d4cd5111d7765f697d0b93a3777f42f367e553176149738ae2e78b6038daa95e82448ce0229ae9
+  languageName: node
+  linkType: hard
+
 "css-loader@npm:4.3.0":
   version: 4.3.0
   resolution: "css-loader@npm:4.3.0"
@@ -11279,6 +11301,13 @@ __metadata:
   version: 1.0.4
   resolution: "extracted-loader@npm:1.0.4"
   checksum: 6f2c71176626305393900cb40cacb7a226d9c5305a330fb45f54f6f4f60c72c1b8165625380240b8843e6818705c6369749b262673e0914554abc06a6cd4a36e
+  languageName: node
+  linkType: hard
+
+"extracted-loader@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "extracted-loader@npm:1.0.7"
+  checksum: a9724b66a485c8215e464984a98726b4401d6b01e1ebd6d867297aad0688710f35334c5d35fe27f7b5d7c76c3183bd5488dabcbac9bcaff233ee9defbb7f5885
   languageName: node
   linkType: hard
 
@@ -17554,6 +17583,7 @@ __metadata:
     "@types/http-proxy": 1.17.3
     "@types/jest": 24.0.13
     "@types/node": ^12.6.8
+    "@types/react": 16.9.17
     "@types/string-hash": 1.1.1
     "@typescript-eslint/eslint-plugin": 2.17.0
     "@typescript-eslint/parser": 2.17.0
@@ -17577,6 +17607,7 @@ __metadata:
     coveralls: 3.0.3
     cross-env: 6.0.3
     cross-spawn: 6.0.5
+    css-loader: 3.2.0
     escape-string-regexp: 2.0.0
     eslint: 6.8.0
     eslint-plugin-import: 2.20.2
@@ -17585,6 +17616,7 @@ __metadata:
     eslint-plugin-react-hooks: 2.3.0
     execa: 2.0.3
     express: 4.17.0
+    extracted-loader: ^1.0.7
     faunadb: 2.6.1
     find-up: 4.1.0
     firebase: 7.14.5
@@ -17592,6 +17624,7 @@ __metadata:
     get-port: 5.1.1
     glob: 7.1.6
     gzip-size: 5.1.1
+    ignore-loader: 0.1.2
     isomorphic-unfetch: 3.0.0
     jest-circus: 26.0.1
     jest-cli: 24.9.0
@@ -17630,6 +17663,7 @@ __metadata:
     release: 6.3.0
     request-promise-core: 1.1.2
     rimraf: 2.6.3
+    sass-loader: 10.0.2
     seedrandom: 3.0.5
     selenium-standalone: 6.18.0
     selenium-webdriver: 4.0.0-alpha.7
@@ -20127,7 +20161,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-modules-local-by-default@npm:^3.0.3":
+"postcss-modules-local-by-default@npm:^3.0.2, postcss-modules-local-by-default@npm:^3.0.3":
   version: 3.0.3
   resolution: "postcss-modules-local-by-default@npm:3.0.3"
   dependencies:
@@ -20149,7 +20183,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-modules-scope@npm:^2.2.0":
+"postcss-modules-scope@npm:^2.1.0, postcss-modules-scope@npm:^2.2.0":
   version: 2.2.0
   resolution: "postcss-modules-scope@npm:2.2.0"
   dependencies:
@@ -20652,7 +20686,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-value-parser@npm:^4.0.2, postcss-value-parser@npm:^4.1.0":
+"postcss-value-parser@npm:^4.0.0, postcss-value-parser@npm:^4.0.2, postcss-value-parser@npm:^4.1.0":
   version: 4.1.0
   resolution: "postcss-value-parser@npm:4.1.0"
   checksum: 70831403886859289f650550a38889857022c5bbe264fd5d39cfad5207b3e1d33422edc031c1a922f3ae29d0dff98837a8bf126c840374d2b0079e7d57cf7d71

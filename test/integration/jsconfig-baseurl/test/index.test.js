@@ -56,7 +56,7 @@ describe('TypeScript Features', () => {
 
       const found = await check(
         () => output,
-        /Module not found: Can't resolve 'components\/worldd'/,
+        /Module not found: Your application tried to access components/,
         false
       )
       await fs.writeFile(basicPage, contents)
