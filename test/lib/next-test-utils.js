@@ -88,7 +88,7 @@ export function findPort() {
 }
 
 export function runNextCommand(argv, options = {}) {
-  const nextDir = NEXT_DIR;
+  const nextDir = NEXT_DIR
   const nextBin = path.join(nextDir, 'dist/bin/next')
   const cwd = options.cwd || nextDir
   // Let Next.js decide the environment
@@ -129,7 +129,11 @@ export function runNextCommand(argv, options = {}) {
         !options.ignoreFail &&
         code !== 0
       ) {
-        return reject(new Error(`command failed with code ${code}:\n\nStdout:\n${stdoutOutput}\nStderr:\n${stderrOutput}`))
+        return reject(
+          new Error(
+            `command failed with code ${code}:\n\nStdout:\n${stdoutOutput}\nStderr:\n${stderrOutput}`
+          )
+        )
       }
 
       resolve({
@@ -148,7 +152,7 @@ export function runNextCommand(argv, options = {}) {
 }
 
 export function runNextCommandDev(argv, stdOut, opts = {}) {
-  const cwd = NEXT_DIR;
+  const cwd = NEXT_DIR
 
   const env = {
     ...process.env,

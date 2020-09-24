@@ -158,6 +158,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ky-universal", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:0.6.0"],
             ["lerna", "npm:3.14.1"],
             ["lint-staged", "npm:10.1.7"],
+            ["lodash", "npm:4.17.20"],
             ["lost", "npm:8.3.1"],
             ["minimatch", "npm:3.0.4"],
             ["moment", "npm:2.24.0"],
@@ -177,6 +178,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["pretty-bytes", "npm:5.3.0"],
             ["pretty-ms", "npm:7.0.0"],
+            ["prop-types", "npm:15.7.2"],
             ["react", "npm:16.12.0"],
             ["react-dom", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:16.12.0"],
             ["react-is", "npm:16.13.1"],
@@ -20532,6 +20534,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-docker", "npm:2.0.0"],
             ["is-wsl", "npm:2.2.0"],
             ["jest-worker", "npm:24.9.0"],
+            ["jimp", null],
             ["json5", "npm:2.1.3"],
             ["jsonwebtoken", "npm:8.5.1"],
             ["loader-utils", "npm:2.0.0"],
@@ -20588,6 +20591,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webpack-sources", "npm:1.4.3"]
           ],
           "packagePeers": [
+            "jimp",
             "react-dom",
             "react"
           ],
@@ -20829,6 +20833,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ky-universal", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:0.6.0"],
             ["lerna", "npm:3.14.1"],
             ["lint-staged", "npm:10.1.7"],
+            ["lodash", "npm:4.17.20"],
             ["lost", "npm:8.3.1"],
             ["minimatch", "npm:3.0.4"],
             ["moment", "npm:2.24.0"],
@@ -20848,6 +20853,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["pretty-bytes", "npm:5.3.0"],
             ["pretty-ms", "npm:7.0.0"],
+            ["prop-types", "npm:15.7.2"],
             ["react", "npm:16.12.0"],
             ["react-dom", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:16.12.0"],
             ["react-is", "npm:16.13.1"],

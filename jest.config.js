@@ -1,5 +1,5 @@
-const {readdirSync} = require('fs')
-const {basename} = require('path')
+const { readdirSync } = require('fs')
+const { basename } = require('path')
 
 module.exports = {
   // this will become default in jest 27:
@@ -15,5 +15,7 @@ module.exports = {
 }
 
 for (const name of readdirSync('test/lib')) {
-  module.exports.moduleNameMapper[`^${basename(name, '.js')}$`] = `<rootDir>/lib/${name}`
+  module.exports.moduleNameMapper[
+    `^${basename(name, '.js')}$`
+  ] = `<rootDir>/lib/${name}`
 }

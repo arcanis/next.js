@@ -119,6 +119,11 @@
     "react": "^16.6.0",
     "react-dom": "^16.6.0"
   },
+  "peerDependenciesMeta": {
+    "jimp": {
+      "optional": true
+    }
+  },
   "devDependencies": {
     "@next/polyfill-nomodule": "9.5.4-canary.20",
     "@taskr/clear": "1.1.0",

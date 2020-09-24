@@ -1,7 +1,7 @@
 function a(v) {
   return v
 }
-;['index.js'].forEach(f => {
+;['index.js'].forEach((f) => {
   require(a('./' + f))
 })
 
