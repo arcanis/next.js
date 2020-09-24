@@ -81,7 +81,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@next/bundle-analyzer", ["workspace:packages/next-bundle-analyzer"]],
       ["@next/codemod", ["workspace:packages/next-codemod"]],
       ["@next/eslint-plugin-next", ["workspace:packages/eslint-plugin-next"]],
-      ["@next/mdx", ["workspace:packages/next-mdx"]],
+      ["@next/mdx", ["virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#workspace:packages/next-mdx", "workspace:packages/next-mdx"]],
       ["@next/plugin-google-analytics", ["workspace:packages/next-plugin-google-analytics"]],
       ["@next/plugin-sentry", ["workspace:packages/next-plugin-sentry"]],
       ["@next/plugin-storybook", ["workspace:packages/next-plugin-storybook"]],
@@ -109,6 +109,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@fullhuman/postcss-purgecss", "npm:1.3.0"],
             ["@mdx-js/loader", "npm:0.18.0"],
             ["@next/eslint-plugin-next", "workspace:packages/eslint-plugin-next"],
+            ["@next/mdx", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#workspace:packages/next-mdx"],
             ["@types/cheerio", "npm:0.22.16"],
             ["@types/fs-extra", "npm:8.1.0"],
             ["@types/http-proxy", "npm:1.17.3"],
@@ -6030,6 +6031,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@next/mdx", [
+        ["virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#workspace:packages/next-mdx", {
+          "packageLocation": "./.yarn/$$virtual/@next-mdx-virtual-21ceb9c497/1/packages/next-mdx/",
+          "packageDependencies": [
+            ["@next/mdx", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#workspace:packages/next-mdx"],
+            ["@mdx-js/loader", "npm:0.18.0"],
+            ["@types/mdx-js__loader", null]
+          ],
+          "packagePeers": [
+            "@mdx-js/loader",
+            "@types/mdx-js__loader"
+          ],
+          "linkType": "SOFT",
+        }],
         ["workspace:packages/next-mdx", {
           "packageLocation": "./packages/next-mdx/",
           "packageDependencies": [
@@ -20819,6 +20833,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@fullhuman/postcss-purgecss", "npm:1.3.0"],
             ["@mdx-js/loader", "npm:0.18.0"],
             ["@next/eslint-plugin-next", "workspace:packages/eslint-plugin-next"],
+            ["@next/mdx", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#workspace:packages/next-mdx"],
             ["@types/cheerio", "npm:0.22.16"],
             ["@types/fs-extra", "npm:8.1.0"],
             ["@types/http-proxy", "npm:1.17.3"],
