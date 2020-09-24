@@ -4636,6 +4636,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/long@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@types/long@npm:4.0.1"
+  checksum: ed2a125330dbf2b425b2e58b1e1151a37106ceeec973f9f191fba0bda83ed00fae6d858254022e8b6e7165fec5f0c3872b7cb5f425c753383fed54699fb63b38
+  languageName: node
+  linkType: hard
+
 "@types/lru-cache@npm:5.1.0":
   version: 5.1.0
   resolution: "@types/lru-cache@npm:5.1.0"
@@ -4709,6 +4716,13 @@ __metadata:
   version: 12.12.24
   resolution: "@types/node@npm:12.12.24"
   checksum: 6a432d3f23d55cc51d67440f0d802e8c5499023db2e7d73312ae6d3ff94bac1ab703871f16db08fd73103166384d550e529c98a7873deee01177e0499dd6b418
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^13.7.0":
+  version: 13.13.21
+  resolution: "@types/node@npm:13.13.21"
+  checksum: 8e88d06fa585e932d3158644d2aefb9dcd3a3e0383594d820044b5264f912126c0fe32b33cdb83e2e1d11560240c64e5b1ac72bbe5bb0f96936f3bd1bb76aeb3
   languageName: node
   linkType: hard
 
@@ -16986,6 +17000,7 @@ __metadata:
     execa: 2.0.3
     express: 4.17.0
     faunadb: 2.6.1
+    find-up: 4.1.0
     firebase: 7.14.5
     fs-extra: 9.0.0
     get-port: 5.1.1
@@ -20329,6 +20344,30 @@ __metadata:
   version: 1.2.4
   resolution: "proto-list@npm:1.2.4"
   checksum: e722a11c66837cab0d5b81dd3f18717b73ea068fad0ceaf71d856e82167699c632201d0a1793ea48c997f1ac8544e9af89debc5cbd389b639370bc1adfb3abb4
+  languageName: node
+  linkType: hard
+
+"protobufjs@npm:*":
+  version: 6.10.1
+  resolution: "protobufjs@npm:6.10.1"
+  dependencies:
+    "@protobufjs/aspromise": ^1.1.2
+    "@protobufjs/base64": ^1.1.2
+    "@protobufjs/codegen": ^2.0.4
+    "@protobufjs/eventemitter": ^1.1.0
+    "@protobufjs/fetch": ^1.1.0
+    "@protobufjs/float": ^1.0.2
+    "@protobufjs/inquire": ^1.1.0
+    "@protobufjs/path": ^1.1.2
+    "@protobufjs/pool": ^1.1.0
+    "@protobufjs/utf8": ^1.1.0
+    "@types/long": ^4.0.1
+    "@types/node": ^13.7.0
+    long: ^4.0.0
+  bin:
+    pbjs: bin/pbjs
+    pbts: bin/pbts
+  checksum: 6917e2533744bff3b6af4c6d0bbe2d99389fbf03b468f81cac8795de9ea0d4b85802154d5a2eb9fda0611389bf2c44e65506124fefb129310060b658fa3b421d
   languageName: node
   linkType: hard
 

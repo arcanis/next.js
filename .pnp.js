@@ -144,6 +144,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["execa", "npm:2.0.3"],
             ["express", "npm:4.17.0"],
             ["faunadb", "npm:2.6.1"],
+            ["find-up", "npm:4.1.0"],
             ["firebase", "npm:7.14.5"],
             ["fs-extra", "npm:9.0.0"],
             ["get-port", "npm:5.1.1"],
@@ -4402,6 +4403,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@grpc/proto-loader", "npm:0.5.3"],
             ["@types/firebase__app", null],
             ["@types/firebase__app-types", null],
+            ["protobufjs", "npm:6.10.1"],
             ["tslib", "npm:1.11.1"]
           ],
           "packagePeers": [
@@ -7077,6 +7079,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/long", "npm:4.0.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:4.0.1", {
+          "packageLocation": "./.yarn/cache/@types-long-npm-4.0.1-022c8b6e77-ed2a125330.zip/node_modules/@types/long/",
+          "packageDependencies": [
+            ["@types/long", "npm:4.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@types/lru-cache", [
@@ -7154,6 +7163,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-13.1.4-f97da2e00a-1aeacd80ae.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:13.1.4"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:13.13.21", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-13.13.21-79673be3de-8e88d06fa5.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:13.13.21"]
           ],
           "linkType": "HARD",
         }]
@@ -20799,6 +20815,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["execa", "npm:2.0.3"],
             ["express", "npm:4.17.0"],
             ["faunadb", "npm:2.6.1"],
+            ["find-up", "npm:4.1.0"],
             ["firebase", "npm:7.14.5"],
             ["fs-extra", "npm:9.0.0"],
             ["get-port", "npm:5.1.1"],
@@ -24394,6 +24411,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["protobufjs", [
+        ["npm:6.10.1", {
+          "packageLocation": "./.yarn/unplugged/protobufjs-npm-6.10.1-e168613ba4/node_modules/protobufjs/",
+          "packageDependencies": [
+            ["protobufjs", "npm:6.10.1"],
+            ["@protobufjs/aspromise", "npm:1.1.2"],
+            ["@protobufjs/base64", "npm:1.1.2"],
+            ["@protobufjs/codegen", "npm:2.0.4"],
+            ["@protobufjs/eventemitter", "npm:1.1.0"],
+            ["@protobufjs/fetch", "npm:1.1.0"],
+            ["@protobufjs/float", "npm:1.0.2"],
+            ["@protobufjs/inquire", "npm:1.1.0"],
+            ["@protobufjs/path", "npm:1.1.2"],
+            ["@protobufjs/pool", "npm:1.1.0"],
+            ["@protobufjs/utf8", "npm:1.1.0"],
+            ["@types/long", "npm:4.0.1"],
+            ["@types/node", "npm:13.13.21"],
+            ["long", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:6.8.8", {
           "packageLocation": "./.yarn/unplugged/protobufjs-npm-6.8.8-0d85a356f7/node_modules/protobufjs/",
           "packageDependencies": [

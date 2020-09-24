@@ -4,7 +4,7 @@ export async function getStaticProps() {
   // throw new Error('oops from getStaticProps')
   return {
     props: { world: 'world', time: new Date().getTime() },
-    // bad-prop
+    another: true,
     revalidate: 1,
   }
 }
