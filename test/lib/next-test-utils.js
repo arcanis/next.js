@@ -88,9 +88,18 @@ export function findPort() {
 }
 
 export function runNextCommand(argv, options = {}) {
-  const nextDir = NEXT_DIR
+  let nextDir;
+  try {
+    nextDir = path.dirname(require.resolve(`next/package.json`, {paths: [options.dir]}));
+  } catch {}
+  
+  if (typeof nextDir === 'undefined') {
+    nextDir = NEXT_DIR;
+  }
+
   const nextBin = path.join(nextDir, 'dist/bin/next')
-  const cwd = options.cwd || nextDir
+  const cwd = options.cwd || NEXT_DIR
+
   // Let Next.js decide the environment
   const env = {
     ...process.env,
@@ -152,7 +161,17 @@ export function runNextCommand(argv, options = {}) {
 }
 
 export function runNextCommandDev(argv, stdOut, opts = {}) {
-  const cwd = NEXT_DIR
+  let nextDir;
+  try {
+    nextDir = path.dirname(require.resolve(`next/package.json`, {paths: [options.dir]}));
+  } catch {}
+  
+  if (typeof nextDir === 'undefined') {
+    nextDir = NEXT_DIR;
+  }
+
+  const nextBin = path.join(nextDir, 'dist/bin/next')
+  const cwd = opts.cwd || NEXT_DIR
 
   const env = {
     ...process.env,
@@ -164,7 +183,7 @@ export function runNextCommandDev(argv, stdOut, opts = {}) {
   return new Promise((resolve, reject) => {
     const instance = spawn(
       'node',
-      ['--no-deprecation', 'dist/bin/next', ...argv],
+      ['--no-deprecation', nextBin, ...argv],
       { cwd, env }
     )
 
@@ -225,24 +244,37 @@ export function runNextCommandDev(argv, stdOut, opts = {}) {
 
 // Launch the app in dev mode.
 export function launchApp(dir, port, opts) {
-  return runNextCommandDev([dir, '-p', port], undefined, opts)
+  return runNextCommandDev([dir, '-p', port], undefined, {
+    ...opts,
+    dir
+  })
 }
 
 export function nextBuild(dir, args = [], opts = {}) {
-  return runNextCommand(['build', dir, ...args], opts)
+  return runNextCommand(['build', dir, ...args], {
+    ...opts,
+    dir
+  })
 }
 
 export function nextExport(dir, { outdir }, opts = {}) {
-  return runNextCommand(['export', dir, '--outdir', outdir], opts)
+  return runNextCommand(['export', dir, '--outdir', outdir], {
+    ...opts,
+    dir
+  })
 }
 
 export function nextExportDefault(dir, opts = {}) {
-  return runNextCommand(['export', dir], opts)
+  return runNextCommand(['export', dir], {
+    ...opts,
+    dir
+  })
 }
 
 export function nextStart(dir, port, opts = {}) {
   return runNextCommandDev(['start', '-p', port, dir], undefined, {
     ...opts,
+    dir,
     nextStart: true,
   })
 }
@@ -277,6 +309,9 @@ export function buildTS(args = [], cwd, env = {}) {
 
 // Kill a launched app
 export async function killApp(instance) {
+  if (!instance)
+    return;
+
   await new Promise((resolve, reject) => {
     treeKill(instance.pid, (err) => {
       if (err) {
