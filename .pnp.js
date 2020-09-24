@@ -183,6 +183,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["pretty-bytes", "npm:5.3.0"],
             ["pretty-ms", "npm:7.0.0"],
+            ["probe-image-size", "npm:5.0.0"],
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:16.12.0"],
             ["react-dom", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:16.12.0"],
@@ -21624,6 +21625,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next-tick", "npm:1.0.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.1.0", {
+          "packageLocation": "./.yarn/cache/next-tick-npm-1.1.0-e0eb60d6a4-586cc85dcd.zip/node_modules/next-tick/",
+          "packageDependencies": [
+            ["next-tick", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["nextjs-project", [
@@ -21712,6 +21720,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["pretty-bytes", "npm:5.3.0"],
             ["pretty-ms", "npm:7.0.0"],
+            ["probe-image-size", "npm:5.0.0"],
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:16.12.0"],
             ["react-dom", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:16.12.0"],
@@ -25203,6 +25212,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["probe-image-size", [
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/probe-image-size-npm-5.0.0-3ae42093a2-bc1e71533e.zip/node_modules/probe-image-size/",
+          "packageDependencies": [
+            ["probe-image-size", "npm:5.0.0"],
+            ["deepmerge", "npm:4.2.2"],
+            ["inherits", "npm:2.0.4"],
+            ["next-tick", "npm:1.1.0"],
+            ["request", "npm:2.88.2"],
+            ["stream-parser", "npm:0.3.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["process", [
         ["npm:0.11.10", {
           "packageLocation": "./.yarn/cache/process-npm-0.11.10-aeb3b641ae-ed93a85e91.zip/node_modules/process/",
@@ -28354,6 +28377,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["readable-stream", "npm:2.3.7"],
             ["to-arraybuffer", "npm:1.0.1"],
             ["xtend", "npm:4.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["stream-parser", [
+        ["npm:0.3.1", {
+          "packageLocation": "./.yarn/cache/stream-parser-npm-0.3.1-0b70187c85-d13e276655.zip/node_modules/stream-parser/",
+          "packageDependencies": [
+            ["stream-parser", "npm:0.3.1"],
+            ["debug", "virtual:6e177cabfad012f413f9c41366539c04d8701f0567119998690ab02224012faa99ec3a16b9f74f4d7920ab472c12b3e70f47f8f143239c06d0e2569e60ed9f62#npm:2.6.9"]
           ],
           "linkType": "HARD",
         }]

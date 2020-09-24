@@ -9659,7 +9659,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:2.6.9, debug@npm:^2.2.0, debug@npm:^2.3.3, debug@npm:^2.6.6, debug@npm:^2.6.9":
+"debug@npm:2, debug@npm:2.6.9, debug@npm:^2.2.0, debug@npm:^2.3.3, debug@npm:^2.6.6, debug@npm:^2.6.9":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
   dependencies:
@@ -9788,7 +9788,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deepmerge@npm:^4.2.2":
+"deepmerge@npm:^4.0.0, deepmerge@npm:^4.2.2":
   version: 4.2.2
   resolution: "deepmerge@npm:4.2.2"
   checksum: 85abf8e0045ee280996e7d2396979c877ef0741e413b716e42441110e0a83ac08098b2a49cea035510060bf667c0eae3189b2a52349f5fa4b000c211041637b1
@@ -17343,6 +17343,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-tick@npm:^1.0.0":
+  version: 1.1.0
+  resolution: "next-tick@npm:1.1.0"
+  checksum: 586cc85dcd8ec759b03269b39c8e3d899a27dbe49c472e7fb2b6a98b14a5b46d8c3b1b9a5fae29eb22881d9efa6d882d44617c51268b49d92e98ba8f20d42000
+  languageName: node
+  linkType: hard
+
 "next-tick@npm:~1.0.0":
   version: 1.0.0
   resolution: "next-tick@npm:1.0.0"
@@ -17614,6 +17621,7 @@ __metadata:
     prettier: 2.0.5
     pretty-bytes: 5.3.0
     pretty-ms: 7.0.0
+    probe-image-size: ^5.0.0
     prop-types: 15.7.2
     react: 16.12.0
     react-dom: 16.12.0
@@ -20878,6 +20886,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"probe-image-size@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "probe-image-size@npm:5.0.0"
+  dependencies:
+    deepmerge: ^4.0.0
+    inherits: ^2.0.3
+    next-tick: ^1.0.0
+    request: ^2.83.0
+    stream-parser: ~0.3.1
+  checksum: bc1e71533e85d313d848c26842520827d07cb3fdda6c2b28857262de39734d81dd7d95322f6c9e9caa3f8e3112ec770d7836075e4d037e8a968a4d718fa66f00
+  languageName: node
+  linkType: hard
+
 "process-nextick-args@npm:~2.0.0":
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
@@ -22063,7 +22084,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"request@npm:2.88.2, request@npm:^2.88.2":
+"request@npm:2.88.2, request@npm:^2.83.0, request@npm:^2.88.2":
   version: 2.88.2
   resolution: "request@npm:2.88.2"
   dependencies:
@@ -23777,6 +23798,15 @@ resolve@1.8.1:
     to-arraybuffer: ^1.0.0
     xtend: ^4.0.0
   checksum: 7ef9e10567b1a49d6c05730427280ef7623a6b407df3981d5d14d30d56225c4d64857d7473ab8eca93dbcaaf897e4f4fda8b5b482cf26255e26f1a31d696c1b8
+  languageName: node
+  linkType: hard
+
+"stream-parser@npm:~0.3.1":
+  version: 0.3.1
+  resolution: "stream-parser@npm:0.3.1"
+  dependencies:
+    debug: 2
+  checksum: d13e276655203e693c237eed290e38d3fffd00834a0c3b591fe401df7cc7ddec54b71d8edaf5f7c982668732e2355b8e1a6b400207621ef5b8d1f0ca17b76814
   languageName: node
   linkType: hard
 
