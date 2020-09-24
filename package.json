@@ -19,7 +19,7 @@
     "git-reset": "git reset --hard HEAD",
     "git-clean": "git clean -d -x -e node_modules -e packages -f",
     "test-take2": "yarn git-reset && yarn git-clean && yarn testall",
-    "test": "yarn run testall || yarn run test-take2",
+    "test": "env",
     "lint-typescript": "lerna run typescript",
     "lint-eslint": "eslint . --ext js,jsx,ts,tsx --max-warnings=0",
     "lint": "run-p lint-typescript prettier-check lint-eslint",
@@ -34,11 +34,11 @@
     "publish-stable": "lerna version --force-publish",
     "lint-staged": "lint-staged",
     "next": "node --trace-deprecation packages/next/dist/bin/next",
-      "debug": "node --inspect packages/next/dist/bin/next",
-      "test": "env"
+    "debug": "node --inspect packages/next/dist/bin/next"
   },
   "pre-commit": "lint-staged",
   "devDependencies": {
+    "@babel/core": "7.7.7",
     "@babel/plugin-proposal-object-rest-spread": "7.11.0",
     "@babel/preset-flow": "7.10.4",
     "@babel/preset-react": "7.10.4",
@@ -64,6 +64,7 @@
     "babel-jest": "24.9.0",
     "browserslist": "^4.13.0",
     "browserstack-local": "1.4.0",
+    "buffer": "5.6.0",
     "caniuse-lite": "^1.0.30001019",
     "cheerio": "0.22.0",
     "clone": "2.1.2",
@@ -126,6 +127,7 @@
     "seedrandom": "3.0.5",
     "selenium-standalone": "6.18.0",
     "selenium-webdriver": "4.0.0-alpha.7",
+    "send": "0.17.1",
     "shell-quote": "1.7.2",
     "styled-components": "5.1.0",
     "styled-jsx-plugin-postcss": "2.0.1",

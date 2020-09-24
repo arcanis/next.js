@@ -19,7 +19,8 @@
     "null-loader": "4.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "webpack-filter-warnings-plugin": "1.2.1"
+    "webpack-filter-warnings-plugin": "1.2.1",
+    "webpack": "4.44.1"
   },
   "license": "MIT",
   "devDependencies": {

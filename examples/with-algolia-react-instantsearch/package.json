@@ -15,7 +15,8 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-instantsearch-dom": "6.6.0",
-    "style-loader": "^0.17.0"
+    "style-loader": "^0.17.0",
+    "webpack": "4.44.1"
   },
   "license": "MIT"
 }
