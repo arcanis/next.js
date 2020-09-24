@@ -5,6 +5,7 @@ import 'flat-map-polyfill'
 import { readdir, readFile, remove } from 'fs-extra'
 import {
   File,
+  customNodeOptions,
   findPort,
   killApp,
   launchApp,
@@ -33,7 +34,7 @@ describe('SCSS Support', () => {
 
     it('should be a friendly error successfully', async () => {
       const { code, stderr } = await nextBuild(appDir, [], {
-        env: { NODE_OPTIONS: shellQuote([`--require`, mockFile]) },
+        env: { NODE_OPTIONS: customNodeOptions(shellQuote([`--require`, mockFile])) },
         stderr: true,
       })
       expect(code).toBe(1)

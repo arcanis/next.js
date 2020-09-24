@@ -189,7 +189,7 @@ export function runNextCommandDev(argv, stdOut, opts = {}) {
         opts.onStdout(message)
       }
 
-      if (opts.stdout !== false) {
+      if (opts.stdout !== false || process.env.DUMP_SPAWN) {
         process.stdout.write(message)
       }
     }
@@ -200,7 +200,7 @@ export function runNextCommandDev(argv, stdOut, opts = {}) {
         opts.onStderr(message)
       }
 
-      if (opts.stderr !== false) {
+      if (opts.stderr !== false || process.env.DUMP_SPAWN) {
         process.stderr.write(message)
       }
     }
@@ -557,4 +557,8 @@ export function getPageFileFromPagesManifest(dir, page) {
 export function readNextBuildServerPageFile(appDir, page) {
   const pageFile = getPageFileFromPagesManifest(appDir, page)
   return readFileSync(path.join(appDir, '.next', 'server', pageFile), 'utf8')
+}
+
+export function customNodeOptions(extra) {
+  return `${process.env.NODE_OPTIONS} ${extra}`;
 }
