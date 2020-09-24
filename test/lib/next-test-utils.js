@@ -94,7 +94,7 @@ export function runNextCommand(argv, options = {}) {
   } catch {}
   
   if (typeof nextDir === 'undefined') {
-    nextDir = NEXT_DIR;
+    throw new Error(`The 'dir' option needs to be explicit, so that we know where to resolve Next from`);
   }
 
   const nextBin = path.join(nextDir, 'dist/bin/next')
@@ -163,11 +163,11 @@ export function runNextCommand(argv, options = {}) {
 export function runNextCommandDev(argv, stdOut, opts = {}) {
   let nextDir;
   try {
-    nextDir = path.dirname(require.resolve(`next/package.json`, {paths: [options.dir]}));
+    nextDir = path.dirname(require.resolve(`next/package.json`, {paths: [opts.dir]}));
   } catch {}
   
   if (typeof nextDir === 'undefined') {
-    nextDir = NEXT_DIR;
+    throw new Error(`The 'dir' option needs to be explicit, so that we know where to resolve Next from`);
   }
 
   const nextBin = path.join(nextDir, 'dist/bin/next')
@@ -243,7 +243,7 @@ export function runNextCommandDev(argv, stdOut, opts = {}) {
 }
 
 // Launch the app in dev mode.
-export function launchApp(dir, port, opts) {
+export function launchApp(dir, port, opts = {}) {
   return runNextCommandDev([dir, '-p', port], undefined, {
     ...opts,
     dir
@@ -347,10 +347,12 @@ export async function startApp(app) {
 }
 
 export async function stopApp(server) {
-  if (server.__app) {
-    await server.__app.close()
+  if (server) {
+    if (server.__app) {
+      await server.__app.close()
+    }
+    await promiseCall(server, 'close')
   }
-  await promiseCall(server, 'close')
 }
 
 export function promiseCall(obj, method, ...args) {
