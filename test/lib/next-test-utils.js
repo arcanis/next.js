@@ -94,7 +94,7 @@ export function runNextCommand(argv, options = {}) {
   } catch {}
   
   if (typeof nextDir === 'undefined') {
-    throw new Error(`The 'dir' option needs to be explicit, so that we know where to resolve Next from`);
+    nextDir = NEXT_DIR;
   }
 
   const nextBin = path.join(nextDir, 'dist/bin/next')
@@ -167,7 +167,7 @@ export function runNextCommandDev(argv, stdOut, opts = {}) {
   } catch {}
   
   if (typeof nextDir === 'undefined') {
-    throw new Error(`The 'dir' option needs to be explicit, so that we know where to resolve Next from`);
+    nextDir = NEXT_DIR;
   }
 
   const nextBin = path.join(nextDir, 'dist/bin/next')
