@@ -198,6 +198,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["send", "npm:0.17.1"],
             ["shell-quote", "npm:1.7.2"],
             ["styled-components", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:5.1.0"],
+            ["styled-jsx", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:3.3.0"],
             ["styled-jsx-plugin-postcss", "npm:2.0.1"],
             ["tailwindcss", "npm:1.1.3"],
             ["taskr", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:1.1.0"],
@@ -21735,6 +21736,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["send", "npm:0.17.1"],
             ["shell-quote", "npm:1.7.2"],
             ["styled-components", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:5.1.0"],
+            ["styled-jsx", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:3.3.0"],
             ["styled-jsx-plugin-postcss", "npm:2.0.1"],
             ["tailwindcss", "npm:1.1.3"],
             ["taskr", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:1.1.0"],
@@ -28738,6 +28740,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["styled-jsx", [
+        ["virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:3.3.0", {
+          "packageLocation": "./.yarn/$$virtual/styled-jsx-virtual-5512654ad9/0/cache/styled-jsx-npm-3.3.0-8c31273120-1a90d2f566.zip/node_modules/styled-jsx/",
+          "packageDependencies": [
+            ["styled-jsx", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:3.3.0"],
+            ["@babel/types", "npm:7.8.3"],
+            ["@types/react", null],
+            ["babel-plugin-syntax-jsx", "npm:6.18.0"],
+            ["convert-source-map", "npm:1.7.0"],
+            ["loader-utils", "npm:1.2.3"],
+            ["react", "npm:16.12.0"],
+            ["source-map", "npm:0.7.3"],
+            ["string-hash", "npm:1.1.3"],
+            ["stylis", "npm:3.5.4"],
+            ["stylis-rule-sheet", "virtual:d30e9fa97f2f261fb5018c77410237729ce314c80300e36f46ae95f5dece1c0fc6add9c3fc1b6eef04c616607dc45dad795e0f618e722cff2b897a5c94287018#npm:0.0.10"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }],
         ["virtual:b493f247bcf7ba6e741e5fd0c43a5190b556f63c408f696a1e49a1591a6af159cbf2c635107aebf32570fa7f23a572f5849d7f6f64aea6f4e207a04fe9dd33aa#npm:3.3.0", {
           "packageLocation": "./.yarn/$$virtual/styled-jsx-virtual-d30e9fa97f/0/cache/styled-jsx-npm-3.3.0-8c31273120-1a90d2f566.zip/node_modules/styled-jsx/",
           "packageDependencies": [

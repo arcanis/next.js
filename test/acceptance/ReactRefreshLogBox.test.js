@@ -701,7 +701,11 @@ test('Module not found', async () => {
   const source = await session.getRedboxSource()
   expect(source).toMatchInlineSnapshot(`
     "./index.js:1:0
-    Module not found: Can't resolve 'b'
+    Module not found: Your application tried to access b, but it isn't declared in your dependencies; this makes the require call ambiguous and unsound.
+
+    Required package: b (via \\"b\\")
+    Required by: /Users/mael.nison/next-pnp/test/acceptance/__tmp__/Vp80wtSL2xzAFuxQfXR6r/index.js
+
     > 1 | import Comp from 'b'
       2 |       export default function Oops() {
       3 |         return (

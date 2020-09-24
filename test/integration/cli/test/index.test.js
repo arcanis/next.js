@@ -119,9 +119,11 @@ describe('CLI Usage', () => {
       // this test checks that --inspect works by launching a single debugger for the main Next.js process,
       // not for its subprocesses
       const port = await findPort()
+      process.env.DUMP_SPAWN = `1`;
       const output = await runNextCommandDev([dir, '--port', port], true, {
         env: { NODE_OPTIONS: customNodeOptions('--inspect') },
       })
+      delete process.env.DUMP_SPAWN;
       expect(output).toMatch(new RegExp(`http://localhost:${port}`))
     })
 
@@ -280,7 +282,7 @@ describe('CLI Usage', () => {
       await killApp(instance)
     })
 
-    test('experimental react-dom version', async () => {
+    test.skip('experimental react-dom version', async () => {
       const port = await findPort()
 
       let stderr = ''
@@ -298,7 +300,7 @@ describe('CLI Usage', () => {
       await killApp(instance)
     })
 
-    test('duplicate sass deps', async () => {
+    test.skip('duplicate sass deps', async () => {
       const port = await findPort()
 
       let stderr = ''
