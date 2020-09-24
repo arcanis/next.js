@@ -108,6 +108,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-react", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:7.10.4"],
             ["@fullhuman/postcss-purgecss", "npm:1.3.0"],
             ["@mdx-js/loader", "npm:0.18.0"],
+            ["@mdx-js/tag", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:0.20.3"],
             ["@next/eslint-plugin-next", "workspace:packages/eslint-plugin-next"],
             ["@next/mdx", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#workspace:packages/next-mdx"],
             ["@types/cheerio", "npm:0.22.16"],
@@ -5974,6 +5975,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mdx-js/tag", "virtual:14014c595ce9c083fea5bcc0c97f717084305d3145d44c45c0ddc2947b665ad86660cc776bf5a10ba86daf109da67292b3212dce1accff79612ff94e0fa9f662#npm:0.18.0"],
             ["@types/react", null],
             ["react", null]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:0.20.3", {
+          "packageLocation": "./.yarn/$$virtual/@mdx-js-tag-virtual-8ac2bbcc44/0/cache/@mdx-js-tag-npm-0.20.3-a03a332aa1-a52126e1f5.zip/node_modules/@mdx-js/tag/",
+          "packageDependencies": [
+            ["@mdx-js/tag", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:0.20.3"],
+            ["@types/react", null],
+            ["react", "npm:16.12.0"]
           ],
           "packagePeers": [
             "@types/react",
@@ -20832,6 +20846,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-react", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:7.10.4"],
             ["@fullhuman/postcss-purgecss", "npm:1.3.0"],
             ["@mdx-js/loader", "npm:0.18.0"],
+            ["@mdx-js/tag", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#npm:0.20.3"],
             ["@next/eslint-plugin-next", "workspace:packages/eslint-plugin-next"],
             ["@next/mdx", "virtual:7426a805510b9b7eb2fd3eff2a7d88ddfd4f5a9b0717fcdca1fcb5630cbcb6d264f1781360577d13499263229aae495efe7bf146501a3ba002880934c00ab08e#workspace:packages/next-mdx"],
             ["@types/cheerio", "npm:0.22.16"],

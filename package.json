@@ -44,6 +44,7 @@
     "@babel/preset-react": "7.10.4",
     "@fullhuman/postcss-purgecss": "1.3.0",
     "@mdx-js/loader": "0.18.0",
+    "@mdx-js/tag": "^0.20.3",
     "@next/eslint-plugin-next": "workspace:packages/eslint-plugin-next",
     "@next/mdx": "workspace:packages/next-mdx",
     "@types/cheerio": "0.22.16",
