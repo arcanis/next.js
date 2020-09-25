@@ -160,5 +160,10 @@
   },
   "engines": {
     "node": ">= 10.13.0"
+  },
+  "dependenciesMeta": {
+    "@zeit/ncc@0.20.5": {
+      "unplugged": true
+    }
   }
 }
