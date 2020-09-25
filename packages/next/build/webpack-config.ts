@@ -372,6 +372,7 @@ export default async function getBaseWebpackConfig(
     alias: {
       // These aliases make sure the wrapper module is not included in the bundles
       // Which makes bundles slightly smaller, but also skips parsing a module that we know will result in this alias
+      'next/amp': 'next/dist/next-server/lib/amp.js',
       'next/head': 'next/dist/next-server/lib/head.js',
       'next/router': 'next/dist/client/router.js',
       'next/config': 'next/dist/next-server/lib/runtime-config.js',
@@ -689,8 +690,9 @@ export default async function getBaseWebpackConfig(
     }
 
     // Anything else that is standard JavaScript within `node_modules`
-    // can be externalized.
-    if (isNextExternal || res.match(/node_modules[/\\].*\.js$/)) {
+    // can be externalized. Things in $$virtual are Yarn workspaces, so
+    // we also virtualize them.
+    if (isNextExternal || res.match(/(\$\$virtual|node_modules)[/\\].*\.js$/)) {
       const externalRequest = isNextExternal
         ? // Generate Next.js external import
           path.posix.join(

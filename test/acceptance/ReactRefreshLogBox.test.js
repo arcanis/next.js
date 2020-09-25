@@ -699,7 +699,7 @@ test('Module not found', async () => {
   expect(await session.hasRedbox(true)).toBe(true)
 
   const source = await session.getRedboxSource()
-  expect(source.replace(/[^ ]+index\.js/g, ``)).toMatchInlineSnapshot(`
+  expect(source.replace(/[^ ]+index\.js/g, `index.js`)).toMatchInlineSnapshot(`
     "index.js:1:0
     Module not found: Your application tried to access b, but it isn't declared in your dependencies; this makes the require call ambiguous and unsound.
 
