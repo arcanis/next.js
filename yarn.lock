@@ -17606,6 +17606,7 @@ __metadata:
     cookie: 0.4.1
     cors: 2.8.5
     coveralls: 3.0.3
+    create-next-app: "workspace:packages/create-next-app"
     cross-env: 6.0.3
     cross-spawn: 6.0.5
     css-loader: 3.2.0
@@ -17670,6 +17671,7 @@ __metadata:
     selenium-webdriver: 4.0.0-alpha.7
     send: 0.17.1
     shell-quote: 1.7.2
+    strip-ansi: 6.0.0
     styled-components: 5.1.0
     styled-jsx: 3.3.0
     styled-jsx-plugin-postcss: 2.0.1
